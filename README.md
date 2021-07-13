@@ -1,7 +1,12 @@
 # EnergyExpenditure
 [![DOI](https://zenodo.org/badge/372942363.svg)](https://zenodo.org/badge/latestdoi/372942363)
 
-Code for the "Sensing leg movement enhances wearable monitoring of energy expenditure" paper. Additional data for replicating this study is available: https://simtk.org/projects/energy-est
+Code for the ["Sensing leg movement enhances wearable monitoring of energy expenditure"](https://doi.org/10.1038/s41467-021-24173-x) paper. Additional data for replicating this study is available: https://simtk.org/projects/energy-est
+
+Please cite this work if you use materials from it:
+```
+Slade, P., Kochenderfer, M.J., Delp, S.L. et al. Sensing leg movement enhances wearable monitoring of energy expenditure. Nat Commun 12, 4312 (2021).
+```
 
 This folder contains data, code, and results for validating the Wearable System. The software version, package dependencies, and installation instructions are listed at the bottom of this note.
 
