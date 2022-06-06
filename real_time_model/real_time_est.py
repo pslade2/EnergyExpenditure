@@ -151,6 +151,9 @@ while(not online or (time.time() - init_time < rec_time)):
             data_array[cnt,:] = data_array[tmp_cnt,:]
             data_array[cnt,12] = 1 # error flag for stored data
         
+        stride_window[:-1,:] = stride_window[1:,:] # shifting over data in previous data window
+        stride_window[-1,:] = data_array[cnt,:] # copying new data point into window
+        
         if watching_heelstrike: # if looking for heelstrike
             peak_list = checkPeaks(stride_window[:,shank_gyro_z_ind], b, a, peak_height_thresh, peak_min_dist) # check for peaks
             if len(peak_list) > 1: # checking if a new heel strike has occured
